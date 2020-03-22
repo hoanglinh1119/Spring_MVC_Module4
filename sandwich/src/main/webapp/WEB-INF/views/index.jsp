@@ -9,7 +9,7 @@
 <%@page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Time Zone</title>
+    <title>Gia vi</title>
 </head>
 <body>
 <h2> Sandwich Condiments</h2>
@@ -25,9 +25,7 @@
     <br>
     <br>
     <br>
-
     <input type="submit" value="save">
 </form>
-
 </body>
 </html>
