@@ -12,20 +12,21 @@
     <title>Time Zone</title>
 </head>
 <body>
-<h2> Sandwich Condiments</h2>
-<form id="sandwich" action="sandwich" method="post">
-    <input id="lettuce" type="checkbox" name="lettuce" value="lettuce">
-    <label for="lettuce" >lettuce</label>
-    <input id="tomato" type="checkbox" name="tomato" value="tomato">
-    <label for="tomato">tomato</label>
-    <input id="mustand" type="checkbox" name="mustand" value="mustand">
-    <label for="mustand">mustand</label>
-    <input id="sprouts" type="checkbox" name="sprouts" value="sprouts">
-    <label for="sprouts"> sprouts</label>
+<h2> Caculator</h2>
+<form id="caculator" action="index" method="post">
+    <input name="value1" type="text" >
+    <input name="value2" type="text">
+    <br>
+    <input type="submit" name="select" id="addition" value="addition(+)">
+    <input type="submit" name="select" id="subtraction" value="subtraction(-)">
+    <input type="submit" name="select" id="multiplication" value="multiplication(*)">
+    <input type="submit" name="select" id="division" value="division(/)">
     <br>
     <br>
     <br>
-    <input type="submit" value="save">
+    <h2>Result ${select}:${result}</h2>
 </form>
+
+
 </body>
 </html>
