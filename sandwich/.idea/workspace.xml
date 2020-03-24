@@ -2,38 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2ff8d18-ee82-43b3-867d-e445c7a4929f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../caculator/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/.gradle/5.2.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/.idea/modules/caculator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/build/classes/java/main/controller/CaculatorController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/build/libs/caculator-1.0-SNAPSHOT.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/src/main/java/controller/CaculatorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../caculator/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TH_SpringGreeting/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TH_SpringGreeting/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-email-validation/.idea/modules/spring-email-validation.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../test/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../test/.idea/gradle.xml" beforeDir="false" />
@@ -203,7 +173,9 @@
       <updated>1584806970966</updated>
       <workItem from="1584806973985" duration="1574000" />
       <workItem from="1584876970516" duration="1802000" />
-      <workItem from="1584878798280" duration="1778000" />
+      <workItem from="1584878798280" duration="1914000" />
+      <workItem from="1584883584274" duration="1200000" />
+      <workItem from="1584970266044" duration="3305000" />
     </task>
     <servers />
   </component>
@@ -270,13 +242,13 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1584808186085" />
-    <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1584876972070">
+    <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1584970265528">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="465" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1584876972070" />
-    <state x="209" y="29" key="new project wizard" timestamp="1584878766221">
+    <state x="465" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1584970265528" />
+    <state x="209" y="29" key="new project wizard" timestamp="1584976095464">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="209" y="29" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1584878766221" />
+    <state x="209" y="29" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1584976095464" />
   </component>
 </project>
