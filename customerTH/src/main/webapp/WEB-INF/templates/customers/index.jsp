@@ -6,26 +6,42 @@
   To change this template use File | Settings | File Templates.
 --%>
 
-<%@page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Gia vi</title>
-</head>
-<body>
-<h2> Sandwich Condiments</h2>
-<form id="sandwich" action="sandwich" method="post">
-    <input id="lettuce" type="checkbox" name="lettuce" value="lettuce">
-    <label for="lettuce" >lettuce</label>
-    <input id="tomato" type="checkbox" name="tomato" value="tomato">
-    <label for="tomato">tomato</label>
-    <input id="mustand" type="checkbox" name="mustand" value="mustand">
-    <label for="mustand">mustand</label>
-    <input id="sprouts" type="checkbox" name="sprouts" value="sprouts">
-    <label for="sprouts"> sprouts</label>
-    <br>
-    <br>
-    <br>
-    <input type="submit" value="save">
-</form>
-</body>
-</html>
+<%@ taglib prefix="c"  %>
+<style>
+    table {
+        border: 1px solid #000;
+    }
+    th, td {
+        border: 1px dotted #555;
+    }
+</style>
+There are ${requestScope.customers.size()} customer(s) in list.
+<table>
+    <caption>Customers List</caption>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+    </tr>
+    </thead>
+    <tbody>
+    <c:forEach var="c" items="${requestScope.customers}">
+        <tr>
+            <td>
+                <c:out value="${c.id}"/>
+            </td>
+            <td>
+                <a href="/customers/${c.id}">${c.name}</a>
+            </td>
+            <td>
+                <c:out value="${c.email}"/>
+            </td>
+            <td>
+                <c:out value="${c.address}"/>
+            </td>
+        </tr>
+    </c:forEach>
+    </tbody>
+</table>
