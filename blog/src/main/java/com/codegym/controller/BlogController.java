@@ -61,5 +61,17 @@ public class BlogController {
         return "view";
 
     }
+    @GetMapping("/delete-blog/{id}")
+    public String delete(@PathVariable Long id,Model model){
+        Blog blog=blogService.findById(id);
+        model.addAttribute("blog",blog);
+        return "delete";
+    }
+    @PostMapping("/delete-blog")
+    public String delete(@ModelAttribute("blog") Blog blog,Model model){
+        blogService.remove(blog.getId());
+        model.addAttribute("massage","xoa thanh cong");
+        return "delete";
+    }
 
 }
