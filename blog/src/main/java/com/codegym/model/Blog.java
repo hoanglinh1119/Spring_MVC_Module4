@@ -13,11 +13,15 @@ public class Blog {
     private String title;
     private String time;
 
-    public Blog(String name, String content, String title, String time) {
+
+
+    public Blog(Long id, String name, String content, String title, String time) {
+        this.id=id;
         this.name=name;
         this.content = content;
         this.title = title;
         this.time = time;
+
     }
 
     public Blog() {
@@ -27,7 +31,7 @@ public class Blog {
     public  Long getId(){
         return id;
     }
-    public void setId(){
+    public void setId(Long id){
         this.id=id;
     }
 

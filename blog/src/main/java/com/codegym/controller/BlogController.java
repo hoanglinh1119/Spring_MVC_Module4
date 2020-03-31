@@ -5,10 +5,8 @@ import com.codegym.service.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
@@ -48,7 +46,7 @@ public class BlogController {
         return "edit";
     }
     @PostMapping("/edit-blog")
-    public String update(@ModelAttribute ("blog")Blog blog, Model model){
+    public String update(@ModelAttribute("blog") Blog blog,Model model){
         blogService.save(blog);
         model.addAttribute(model);
         model.addAttribute("massage","sua thanh cong");
@@ -62,16 +60,23 @@ public class BlogController {
 
     }
     @GetMapping("/delete-blog/{id}")
-    public String delete(@PathVariable Long id,Model model){
+    public ModelAndView delete(@PathVariable Long id){
         Blog blog=blogService.findById(id);
-        model.addAttribute("blog",blog);
-        return "delete";
+//        if(blog !=null){
+            ModelAndView modelAndView=new ModelAndView("delete");
+            modelAndView.addObject("blog",blog);
+        System.out.println(blog.getId());
+            return modelAndView;
+//        }else {
+//            ModelAndView modelAndView=new ModelAndView("error.404");
+//            return modelAndView;
+
     }
     @PostMapping("/delete-blog")
-    public String delete(@ModelAttribute("blog") Blog blog,Model model){
+    public String delete(@ModelAttribute("blog") Blog blog, Model model){
         blogService.remove(blog.getId());
         model.addAttribute("massage","xoa thanh cong");
-        return "delete";
+        return "redirect:/home";
     }
 
 }

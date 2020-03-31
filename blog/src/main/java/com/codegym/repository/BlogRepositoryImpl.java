@@ -32,11 +32,11 @@ public class BlogRepositoryImpl implements BlogRepository<Blog> {
     }
 
     @Override
-    public void save(Blog model) {
-        if (model.getId()!=null){
-            em.merge(model);
+    public void save(Blog blog) {
+        if (blog.getId()!=null){
+            em.merge(blog);
         }else {
-            em.persist(model);
+            em.persist(blog);
         }
     }
 
