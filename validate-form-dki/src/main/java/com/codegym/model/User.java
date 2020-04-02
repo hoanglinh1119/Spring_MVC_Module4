@@ -19,6 +19,7 @@ public class User implements Validator {
 
     private String phoneNumber;
     private String email;
+
     @Min(18)
     private int age;
 
@@ -82,8 +83,13 @@ public class User implements Validator {
     @Override
     public void validate(Object target, Errors errors) {
      User user=(User) target;
+        int age=user.getAge();
        String numberPhone=user.getPhoneNumber();
        String email=user.getEmail();
+       if (age<18){ errors.rejectValue("age","age.value");}
+        ValidationUtils.rejectIfEmpty(errors,"age","age.empty");
+
+
         ValidationUtils.rejectIfEmpty(errors,"number","number.empty");
         ValidationUtils.rejectIfEmpty(errors,"email","email.empty");
         if (numberPhone.length()>11 || numberPhone.length()<10){
