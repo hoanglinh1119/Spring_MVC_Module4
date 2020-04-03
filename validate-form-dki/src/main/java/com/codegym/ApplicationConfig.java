@@ -14,7 +14,7 @@ import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.codegym")
+@ComponentScan("com.codegym.controller")
 public class ApplicationConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
     private  ApplicationContext applicationContext;
     @Override

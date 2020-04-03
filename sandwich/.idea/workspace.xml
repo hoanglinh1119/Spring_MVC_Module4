@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2ff8d18-ee82-43b3-867d-e445c7a4929f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../TH_SpringGreeting/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TH_SpringGreeting/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-email-validation/.idea/modules/spring-email-validation.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../time-zone/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../time-zone/.idea/gradle.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,6 +170,7 @@
       <workItem from="1584878798280" duration="1914000" />
       <workItem from="1584883584274" duration="1200000" />
       <workItem from="1584970266044" duration="3305000" />
+      <workItem from="1585013174596" duration="4275000" />
     </task>
     <servers />
   </component>
@@ -242,13 +237,13 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1584808186085" />
-    <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1584970265528">
+    <state x="465" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1585013176892">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="465" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1584970265528" />
-    <state x="209" y="29" key="new project wizard" timestamp="1584976095464">
+    <state x="465" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1585013176892" />
+    <state x="209" y="29" key="new project wizard" timestamp="1585038560742">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="209" y="29" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1584976095464" />
+    <state x="209" y="29" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1585038560742" />
   </component>
 </project>

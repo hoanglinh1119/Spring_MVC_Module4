@@ -25,13 +25,13 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
        this.applicationContext=applicationContext;
     }
     @Bean
-    public SpringResourceTemplateResolver templateResolver(){
-        SpringResourceTemplateResolver templateResolver=new SpringResourceTemplateResolver();
-       templateResolver.setApplicationContext(applicationContext);
-       templateResolver.setPrefix("/WEB-INF/views/");
-       templateResolver.setSuffix(".html");
-       templateResolver.setTemplateMode(TemplateMode.HTML);
-       return templateResolver;
+    public SpringResourceTemplateResolver templateResolver() {
+        SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
+        templateResolver.setApplicationContext(applicationContext);
+        templateResolver.setPrefix("/WEB-INF/views/");
+        templateResolver.setSuffix(".html");
+        templateResolver.setTemplateMode(TemplateMode.HTML);
+        return templateResolver;
     }
     @Bean
     public TemplateEngine templateEngine(){
