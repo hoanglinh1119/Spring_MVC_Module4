@@ -2,19 +2,20 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>list blog</title>
+    <title th:text="#{home.list}"></title>
 </head>
 <body>
-<a href="/create-blog">Create new blog</a>
-<h1>Cac Bai Blog:</h1>
+Language: <a href="?lang=en">English</a>
+<a href="/create-blog" th:text="#{home.create}">Create new blog</a>
+<h1 th:text="#{home.list}"></h1>
 <table border="1">
     <tr>
-        <th>Nguoi Viet</th>
-        <th>Tieu De</th>
-        <th>Thoi Gian</th>
-        <th>view</th>
-        <th>edit</th>
-        <th>Delete</th>
+        <th th:text="#{home.the-writer}"></th>
+        <th th:text="#{home.title}"></th>
+        <th th:text="#{home.time}"></th>
+        <th th:text="#{home.view}"></th>
+        <th th:text="#{home.edit}"></th>
+        <th th:text="#{home.delete}"></th>
     </tr>
     <th:block th:each="blog : ${blog}">
         <tr>
