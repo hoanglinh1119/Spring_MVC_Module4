@@ -5,9 +5,9 @@
     <title>View blog</title>
 </head>
 <body>
-<a href="/home">Blog list</a>
+<a href="/">Blog list</a>
 <h1>Cac Bai Blog:</h1>
-<form th:action="@{/delete-blog}" th:object="${blog}" method="post">
+<form th:action="@{/admin/delete-blog}" th:object="${blog}" method="post">
     <input th:type="hidden" name="id" th:field="*{id}">
 <table border="1">
     <tr>

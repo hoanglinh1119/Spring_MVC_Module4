@@ -14,18 +14,18 @@ import java.util.List;
 public class BlogController {
     @Autowired
   private   BlogService blogService;
-    @GetMapping("/home")
+    @GetMapping("/")
     public String getHome(Model model){
         List<Blog> blogs=blogService.findAll();
         model.addAttribute("blog",blogs);
         return "home";
     }
-    @GetMapping("/create-blog")
+    @GetMapping("/user/create-blog")
     public String getCreate(Model model){
         model.addAttribute("blog",new Blog());
         return "create";
     }
-    @PostMapping("/create-blog")
+    @PostMapping("/user/create-blog")
     public String save(@ModelAttribute("blog") Blog blog, Model model){
         java.util.Date date=new java.util.Date();
         String dateDay=String.valueOf(date);
@@ -34,7 +34,7 @@ public class BlogController {
         model.addAttribute("message","them thanh cong");
         return "/create";
     }
-    @GetMapping("/edit-blog/{id}")
+    @GetMapping("/user/edit-blog/{id}")
     public String edit(@PathVariable Long id, Model model){
         Blog blog=blogService.findById(id);
         if (blog!=null) {
@@ -45,21 +45,21 @@ public class BlogController {
         }
         return "edit";
     }
-    @PostMapping("/edit-blog")
+    @PostMapping("/user/edit-blog")
     public String update(@ModelAttribute("blog") Blog blog,Model model){
         blogService.save(blog);
         model.addAttribute(model);
         model.addAttribute("massage","sua thanh cong");
         return "edit";
     }
-    @GetMapping("/view-blog/{id}")
+    @GetMapping("/user/view-blog/{id}")
     public String view(@PathVariable Long id,Model model){
         Blog blog=blogService.findById(id);
             model.addAttribute("blog",blog);
         return "view";
 
     }
-    @GetMapping("/delete-blog/{id}")
+    @GetMapping("/admin/delete-blog/{id}")
     public ModelAndView delete(@PathVariable Long id){
         Blog blog=blogService.findById(id);
 //        if(blog !=null){
@@ -72,7 +72,7 @@ public class BlogController {
 //            return modelAndView;
 
     }
-    @PostMapping("/delete-blog")
+    @PostMapping("/admin/delete-blog")
     public String delete(@ModelAttribute("blog") Blog blog, Model model){
         blogService.remove(blog.getId());
         model.addAttribute("massage","xoa thanh cong");

@@ -6,7 +6,7 @@
 </head>
 <body>
 Language: <a href="?lang=en">English</a>
-<a href="/create-blog" th:text="#{home.create}">Create new blog</a>
+<a href="/user/create-blog" th:text="#{home.create}">Create new blog</a>
 <h1 th:text="#{home.list}"></h1>
 <table border="1">
     <tr>
@@ -22,9 +22,9 @@ Language: <a href="?lang=en">English</a>
             <td th:text="${blog.name}"></td>
             <td th:text="${blog.title}"></td>
             <td th:text="${blog.time}"></td>
-            <td><a th:href="@{/view-blog/__${blog.id}__}">View</a></td>
-            <td><a th:href="@{/edit-blog/__${blog.id}__}">Edit</a></td>
-            <td><a th:href="@{/delete-blog/__${blog.id}__}">Delete</a></td>
+            <td><a th:href="@{/user/view-blog/__${blog.id}__}">View</a></td>
+            <td><a th:href="@{/user/edit-blog/__${blog.id}__}">Edit</a></td>
+            <td><a th:href="@{/admin/delete-blog/__${blog.id}__}">Delete</a></td>
         </tr>
     </th:block>
 </table>

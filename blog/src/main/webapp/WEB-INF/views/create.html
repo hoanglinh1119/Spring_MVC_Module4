@@ -7,12 +7,12 @@
 <body>
 <h1>Create blog</h1>
 <p>
-    <a href="/home">Blog list</a>
+    <a href="/">Blog list</a>
 </p>
 <th:block th:if="${message}">
     <p th:text="${message}"></p>
 </th:block>
-<form th:action="@{/create-blog}" th:object="${blog}" method="post">
+<form th:action="@{/user/create-blog}" th:object="${blog}" method="post">
     <table>
         <tr>
             <td>Ten Cua Ban:</td>
